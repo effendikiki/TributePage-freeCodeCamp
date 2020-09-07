@@ -1,0 +1,59 @@
+
+      @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap");
+      @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+      body {
+        font-family: "Lato", sans-serif;
+        color: white;
+      }
+
+      #main {
+        display: grid;
+        margin: 5%;
+        background-color: #56cbf9;
+        grid-template-rows: repeat(4, auto);
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          "header"
+          "figure"
+          "info"
+          "footer";
+      }
+      header {
+        grid-area: header;
+        display: inherit;
+        place-items: center;
+
+        padding-bottom: 20px;
+      }
+      small {
+        font-size: 16px;
+        font-weight: 600;
+      }
+      #img-div {
+        grid-area: figure;
+        display: grid;
+        place-items: center;
+        font-weight: bolder;
+      }
+      #tribute-info {
+        grid-area: info;
+        font-family: 'Roboto', sans-serif;
+        margin: 0 10% 0 10%;
+      }
+      footer {
+        grid-area: footer;
+        background-color: #ff729f;
+        display: inherit;
+        place-items: center;
+        padding: 15px;
+        font-weight: bolder;
+      }
+      #image{
+        border: solid 5px white;
+        min-width: 50%;
+        max-width: 100%;
+        margin: auto;
+      }
+      #img-caption{
+        margin: 15px;
+      }
